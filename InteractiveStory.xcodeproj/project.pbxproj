@@ -13,6 +13,7 @@
 		7FDB8B411DB5AEC500B60D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB8B401DB5AEC500B60D7C /* Assets.xcassets */; };
 		7FDB8B441DB5AEC500B60D7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FDB8B421DB5AEC500B60D7C /* LaunchScreen.storyboard */; };
 		7FDB8B4C1DB5BD2E00B60D7C /* InteractiveStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDB8B4B1DB5BD2E00B60D7C /* InteractiveStory.swift */; };
+		7FDB8B4E1DB5D53700B60D7C /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDB8B4D1DB5D53700B60D7C /* PageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7FDB8B431DB5AEC500B60D7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FDB8B451DB5AEC500B60D7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FDB8B4B1DB5BD2E00B60D7C /* InteractiveStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveStory.swift; sourceTree = "<group>"; };
+		7FDB8B4D1DB5D53700B60D7C /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7FDB8B421DB5AEC500B60D7C /* LaunchScreen.storyboard */,
 				7FDB8B451DB5AEC500B60D7C /* Info.plist */,
 				7FDB8B4B1DB5BD2E00B60D7C /* InteractiveStory.swift */,
+				7FDB8B4D1DB5D53700B60D7C /* PageController.swift */,
 			);
 			path = InteractiveStory;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDB8B4E1DB5D53700B60D7C /* PageController.swift in Sources */,
 				7FDB8B4C1DB5BD2E00B60D7C /* InteractiveStory.swift in Sources */,
 				7FDB8B3C1DB5AEC500B60D7C /* ViewController.swift in Sources */,
 				7FDB8B3A1DB5AEC500B60D7C /* AppDelegate.swift in Sources */,
