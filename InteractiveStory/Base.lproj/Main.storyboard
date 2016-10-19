@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,18 +26,33 @@
                                     <segue destination="CZb-SB-XFa" kind="show" identifier="startAdventure" id="9sW-Ka-roV"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aDp-G4-Cve">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="01X-iY-oDz"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="aDp-G4-Cve" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="8S7-li-CdY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aDp-G4-Cve" secondAttribute="trailing" constant="24" id="8vp-pe-eGB"/>
                             <constraint firstAttribute="trailing" secondItem="YPy-jY-ffm" secondAttribute="trailing" id="9Ce-Py-X0x"/>
                             <constraint firstItem="YPy-jY-ffm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="JIh-po-txI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YPy-jY-ffm" secondAttribute="bottom" id="LYD-1q-nLj"/>
                             <constraint firstItem="sKr-z2-Got" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bD8-Sh-7Od"/>
                             <constraint firstItem="YPy-jY-ffm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iHu-oL-SSq"/>
+                            <constraint firstItem="sKr-z2-Got" firstAttribute="top" secondItem="aDp-G4-Cve" secondAttribute="bottom" constant="40" id="j7r-YX-abp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sKr-z2-Got" secondAttribute="bottom" constant="48" id="pjz-R7-Fwa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UHU-sM-MI7"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="aDp-G4-Cve" id="3iT-Xe-VdW"/>
+                        <outlet property="textFieldBottomConstraint" destination="j7r-YX-abp" id="Yah-3Z-Pxt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
